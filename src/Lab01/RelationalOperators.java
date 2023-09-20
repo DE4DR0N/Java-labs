@@ -21,17 +21,10 @@ public class RelationalOperators {
 // Display result
         System.out.println("The length for the circle of radius " +
                 radius + " is " + length);
-        // Enter the type int
+        // Enter the type double
+        System.out.print("Enter a number for the side of square: ");
         int i = input.nextInt();
         // Display the result
-        System.out.println("The number is " + i);
-        // Enter the type char
-        char c = input.next().charAt(0);
-        // Display the result
-        System.out.println("The result is " + c);
-        String str = input.nextLine();
-        System.out.println(str);
-        boolean b = input.nextBoolean();
-        System.out.println(b);
+        System.out.println("The square is " + (i * i));
     }
 }

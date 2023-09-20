@@ -13,9 +13,9 @@ import java.util.Scanner;
 public class ConditionalOperators {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        System.out.print("Enter the num(int): ");
         int x = input.nextInt();
         int y;
-        System.out.print("Enter the num(int): " + x);
 // первый вариант
         if (x > 0)
             y = 1;
@@ -29,9 +29,12 @@ public class ConditionalOperators {
         int number = 3;
         System.out.println(number % 2 == 0 ? "число четное" : "число нечетное");
 // пример выбор наибольшего из двух чисел
-        double num1 = 3.4;
-        double num2 = 8.24;
+        System.out.println("Введите два числа для сравнения:");
+        double num1 = input.nextDouble();
+        double num2 = input.nextDouble();
         double max = (num1 > num2) ? num1 : num2;
         System.out.println("Наибольшее из двух чисел равно " + max);
+        double min = (num1 < num2) ? num1 : num2;
+        System.out.println("Наименьшее из двух чисел равно " + min);
     }
 }
