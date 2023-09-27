@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class PRACTICE11_Rating {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
-
+        System.out.print("Enter the number: ");
         int x = input.nextInt();
 
         if (x > 100 || x < 0){

@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class PRACTICE19_MathClassMain {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
-
+        System.out.println("Enter the numbers a, b and c:");
         int a = input.nextInt();
         int b = input.nextInt();
         int c = input.nextInt();

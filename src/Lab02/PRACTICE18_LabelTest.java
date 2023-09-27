@@ -15,7 +15,7 @@ public class PRACTICE18_LabelTest {
             if (scores[i] > 5) {
                 inner:
 
-                for (int j = 0; j < 3; j++) {
+                for (int j = 0; j < 5; j++) {
                     if (scores[i] == 10) {
                         System.out.println(" Хороший результат! Ура!!! ");
                         continue inner;
@@ -26,7 +26,7 @@ public class PRACTICE18_LabelTest {
                     continue outer;
                 }
             }
-            if (scores[i] <= 5) System.out.println("Больше практики...");
+            if (scores[i] <= 7) System.out.println("Больше практики...");
         }
     }
 }
