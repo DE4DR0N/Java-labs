@@ -21,8 +21,8 @@ package Lab03;
  * это не метод main !!!
  * метод просто печатает рейтинг по набранному баллу
  *
- * @author V.V. Sidorik
- * @version 1.2 14.02.2017
+ * @author E.A. Gedrevich
+ * @version 1.0 04.10.2023
  */
 public class PRACTICE24_VoidMethodTest {
     public static void main(String[] args) {

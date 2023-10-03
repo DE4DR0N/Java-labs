@@ -19,21 +19,37 @@
 1. В чем отличие передачи данных по ссылке и по значению?
 */
 package Lab03;
+import java.util.Scanner;
 /**
  * демонстрация передачи by value (по значению)
  *
- * @author V.V. Sidorik
- * @version 1.2 14.02.2017
+ * @author E.A. Gedrevich
+ * @version 1.0 04.10.2023
  */
 public class PRACTICE20_Increment {
     public static void main(String[] args) {
-        int x = 1;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the number: ");
+        int x = input.nextInt();
         System.out.println("Before the call, x is " + x);
-        increment(x);
+        increment_post(x);
+        System.out.println("after the call, x is " + x);
+        increment_pre(x);
+        System.out.println("after the call, x is " + x);
+        equals(x);
         System.out.println("after the call, x is " + x);
     }
-    public static void increment(int n) {
+    public static void increment_post(int n) {
         n++;
-        System.out.println("n inside the method is " + n);
+        System.out.println("n inside the method increment_post is " + n);
     }
+    public static void increment_pre(int n) {
+        ++n;
+        System.out.println("n inside the method increment_pre is " + n);
+    }
+    public static void equals(int n) {
+        n = 3;
+        System.out.println("n inside the method equals is " + n);
+    }
+
 }

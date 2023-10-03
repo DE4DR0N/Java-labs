@@ -16,8 +16,8 @@ package Lab03;
  * другой пример передачи по значению
  * на примере метода swap
  *
- * @author V.V. Sidorik
- * @version 1.2 14.02.2017
+ * @author E.A. Gedrevich
+ * @version 1.0 04.10.2023
  */
 public class PRACTICE23_TestPassByValue {
     /** Main method */

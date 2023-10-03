@@ -25,8 +25,8 @@ package Lab03;
  * тип возвращаемого значения перед именем метода
  * вместо void
  *
- * @author V.V. Sidorik
- * @version 1.2 14.02.2017
+ * @author E.A. Gedrevich
+ * @version 1.0 04.10.2023
  */
 public class PRACTICE21_MaxTest {
     /** Main method */

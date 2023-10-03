@@ -34,8 +34,8 @@ package Lab03;
  * количество параметров и их типы отличаются
  * на примере нахождения максимума и минимума
  *
- * @author V.V. Sidorik
- * @version 1.2 14.02.2017
+ * @author E.A. Gedrevich
+ * @version 1.0 04.10.2023
  */
 public class PRACTICE22_TestMethodOverloading {
     /**
