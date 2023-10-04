@@ -9,7 +9,7 @@ package Lab03;
  * @version 1.0 04.10.2023
  */
 public class PRACTICE22_TestSqrt {
-    public static void Main(String[] args){
+    public static void main(String[] args){
         System.out.println("The result of sqrt of the num 4 is " + MySqrt(4));
         System.out.println("The result of sqrt of the num 16.44 is " + MySqrt(16.44));
     }
