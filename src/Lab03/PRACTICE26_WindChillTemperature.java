@@ -27,6 +27,6 @@ public class PRACTICE26_WindChillTemperature {
         System.out.println("The result is " + calculate(tmpr, hmdt, spd));
     }
     public static double calculate(double temperature, double relativeHumidity, double windSpeed){
-        return 37 - ((37-temperature)/(0.68-0.0014*relativeHumidity+(1/(1.76+1.4*Math.pow(windSpeed,0.75)))))-0.29*temperature*(1-(relativeHumidity/100));;
+        return 37 - ((37-temperature)/(0.68-0.0014*relativeHumidity+(1/(1.76+1.4*Math.pow(windSpeed,0.75)))))-0.29*temperature*(1-(relativeHumidity/100));
     }
 }
