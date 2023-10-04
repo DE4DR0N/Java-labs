@@ -45,21 +45,35 @@ public class PRACTICE22_TestMethodOverloading {
 // Вызов метода max метода с двумя int параметрами
         System.out.println("The maximum between 3 and 4 is "
                 + max(3, 4));
+        System.out.println("The minimum between 3 and 4 is "
+                + min(3, 4));
 // Вызов метода max с двумя double параметрами
         System.out.println("The maximum between 3.0 and 5." +
                 + max(3.0, 5.4));
+        System.out.println("The minimum between 3.0 and 5." +
+                + min(3.0, 5.4));
 // Вызов метода max с int и double параметрами
         System.out.println("The maximum between 3 and 5.4 is "
                 + max(3, 5.4));
+        System.out.println("The minimum between 3 and 5.4 is "
+                + min(3, 5.4));
 // Вызов метода max с тремя! double параметрами
         System.out.println("The maximum between 3.0, 5.4, and 10.14 is "
                 + max(3.0, 5.4, 10.14));
+        System.out.println("The minimum between 3.0, 5.4, and 10.14 is "
+                + min(3.0, 5.4, 10.14));
     }
     /**
      * Возвращает max из двух int значений
      */
     public static int max(int num1, int num2) {
         if (num1 > num2)
+            return num1;
+        else
+            return num2;
+    }
+    public static int min(int num1, int num2) {
+        if (num1 < num2)
             return num1;
         else
             return num2;
@@ -73,11 +87,20 @@ public class PRACTICE22_TestMethodOverloading {
         else
             return num2;
     }
+    public static double min(double num1, double num2) {
+        if (num1 < num2)
+            return num1;
+        else
+            return num2;
+    }
     /**
      * Возвращает max из трех double значений
      * используется обращение к методу с двумя параметрами
      */
     public static double max(double num1, double num2, double num3) {
         return max(max(num1, num2), num3);
+    }
+    public static double min(double num1, double num2, double num3) {
+        return min(min(num1, num2), num3);
     }
 }

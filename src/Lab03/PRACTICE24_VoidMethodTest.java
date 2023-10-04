@@ -32,6 +32,23 @@ public class PRACTICE24_VoidMethodTest {
         printGrade(54.5);
     }
     public static void printGrade(double score) {
-// здесь должен быть ваш код в соответствии с заданием
+        int flag = (int) (score / 10);
+        switch (flag){
+            case (9):
+                System.out.println("A");
+                break;
+            case (8):
+                System.out.println("B");
+                break;
+            case (7):
+                System.out.println("C");
+                break;
+            case (6):
+                System.out.println("D");
+                break;
+            default:
+                System.out.println("F");
+                break;
+        }
     }
 }

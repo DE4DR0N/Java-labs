@@ -9,5 +9,24 @@ ml
 */
 package Lab03;
 
+import java.util.Scanner;
+/**
+ * реализация функции расчёта эффективной температуры
+ *
+ * @author E.A. Gedrevich
+ * @version 1.0 04.10.2023
+ */
 public class PRACTICE26_WindChillTemperature {
+    public static void Main(String[] args){
+        Scanner input = new Scanner(System.in);
+
+        double tmpr = input.nextDouble();
+        double hmdt = input.nextDouble();
+        double spd = input.nextDouble();
+
+        System.out.println("The result is " + calculate(tmpr, hmdt, spd));
+    }
+    public static double calculate(double temperature, double relativeHumidity, double windSpeed){
+        return 37 - ((37-temperature)/(0.68-0.0014*relativeHumidity+(1/(1.76+1.4*Math.pow(windSpeed,0.75)))))-0.29*temperature*(1-(relativeHumidity/100));;
+    }
 }

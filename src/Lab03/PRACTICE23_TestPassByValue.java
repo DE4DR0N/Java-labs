@@ -5,7 +5,7 @@
 Повторите выполнение данного примера.
 Разберитесь в решаемой задаче.
 Самостоятельно:
-Самостоятельно написать код swapFlag, меняюзего местами
+Самостоятельно написать код swapFlag, меняющего местами
 две переменные при передаче третьей перменной, инициализированной TRUE
 Контрольные вопросы (ответы также включить в отчет)
 1. Как передать данные в метод?
@@ -29,7 +29,13 @@ public class PRACTICE23_TestPassByValue {
                 num1 + " и num2 = " + num2);
 // Вызываем метод swap в попытке поменять местами две переменные
         swap(num1, num2);
-        System.out.println("После вызова метода swap method, num1 = " +
+        System.out.println("После вызова метода swap, num1 = " +
+                num1 + " и num2 = " + num2);
+        boolean flag = true;
+        System.out.println("Перед вызовом метода swapflag, num1 = " +
+                num1 + " и num2 = " + num2);
+        swapflag(num1, num2, flag);
+        System.out.println("После вызова метода swapflag, num1 = " +
                 num1 + " и num2 = " + num2);
     }
     /** Swap two variables */
@@ -43,5 +49,19 @@ public class PRACTICE23_TestPassByValue {
         n2 = temp;
         System.out.println("\t\tПосле перестановки n1 = " + n1
                 + " n2 = " + n2);
+    }
+    public static void swapflag(int n1, int n2, boolean f){
+        System.out.println("\tВнутри метода swapflag");
+        System.out.println("\t\tПеред перестановкой n1 = " + n1
+                + " n2 = " + n2 + "flag = " + f);
+        if (f) {
+            int temp = n1;
+            n1 = n2;
+            n2 = temp;
+            System.out.println("\t\tПосле перестановки n1 = " + n1
+                    + " n2 = " + n2);
+        } else {
+            System.out.println("Перестановка не произошла");
+        }
     }
 }

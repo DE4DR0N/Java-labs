@@ -23,13 +23,14 @@ public class PRACTICE25_Array {
     public static void main(String[] args) {
         int[] numbers;
         char[] letters, symbols;
-        long bigNumbers[];
+        long[] bigNumbers;
         String[] countries;
         numbers = new int[3];
         String[] currencies = new String[3];
         numbers[0] = 100;
         numbers[1] = 200;
         numbers[2] = 300;
+        int[] numbers2 = {1, 8, 5, 4, 2, 6, 74, 8, 9, 10};
         int[] newNumbers = {1, 2, 3};
 //Трассировка метода
         int[] list = {1, 4, 4, 2, 5, -3, 6, 2};
@@ -37,6 +38,17 @@ public class PRACTICE25_Array {
         int j = linearSearch(list, -4); // returns -1
         int k = linearSearch(list, -3); // returns 5
         System.out.println(i + " " + j + " " + k);
+        sortmintomax(numbers2);
+        for (int obj:
+             numbers2) {
+            System.out.print(obj + "; ");
+        }
+        System.out.println();
+        sortmaxtomin(numbers2);
+        for (int obj:
+                numbers2) {
+            System.out.print(obj + "; ");
+        }
     }
     /**
      * метод поиска key в списке
@@ -46,5 +58,37 @@ public class PRACTICE25_Array {
             if (key == list[i])
                 return i;
         return -1;
+    }
+    public static int[] sortmintomax(int[] list){
+        boolean isSorted = false;
+        int buf;
+        while (!isSorted){
+            isSorted = true;
+            for (int i = 0; i < list.length - 1; i++){
+                if (list[i] > list[i+1]) {
+                    isSorted = false;
+                    buf = list[i];
+                    list[i]=list[i+1];
+                    list[i+1]=buf;
+                }
+            }
+        }
+        return list;
+    }
+    public static int[] sortmaxtomin(int[] list){
+        boolean isSorted = false;
+        int buf;
+        while (!isSorted){
+            isSorted = true;
+            for (int i = 0; i < list.length - 1; i++){
+                if (list[i] < list[i+1]) {
+                    isSorted = false;
+                    buf = list[i];
+                    list[i]=list[i+1];
+                    list[i+1]=buf;
+                }
+            }
+        }
+        return list;
     }
 }

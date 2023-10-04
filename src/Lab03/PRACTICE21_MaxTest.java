@@ -19,6 +19,9 @@
 значения?
 */
 package Lab03;
+
+import java.util.Scanner;
+
 /**
  * пример метода возвращающего значение
  * метод max возвращает значение целое
@@ -31,12 +34,15 @@ package Lab03;
 public class PRACTICE21_MaxTest {
     /** Main method */
     public static void main(String[] args) {
-        int i = 6;
-        int j = 3;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter 2 numbers:");
+        int i = input.nextInt();
+        int j = input.nextInt();
 // call method max
-        int k = max(i, j);
+        int maxn = max(i, j);
+        min(i, j);
         System.out.println("The maximum between " + i +
-                " and " + j + " is " + k);
+                " and " + j + " is " + maxn);
     }
     /** Return the max between two numbers */
     public static int max(int num1, int num2) {
@@ -46,5 +52,14 @@ public class PRACTICE21_MaxTest {
         else
             result = num2;
         return result;
+    }
+    public static void min(int num1, int num2){
+        int result;
+        if (num1 > num2)
+            result = num2;
+        else
+            result = num1;
+        System.out.println("The minimum between " + num1 +
+                " and " + num2 + " is " + result);
     }
 }
