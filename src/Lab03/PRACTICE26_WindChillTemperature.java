@@ -17,7 +17,7 @@ import java.util.Scanner;
  * @version 1.0 04.10.2023
  */
 public class PRACTICE26_WindChillTemperature {
-    public static void Main(String[] args){
+    public static void main(String[] args){
         Scanner input = new Scanner(System.in);
 
         double tmpr = input.nextDouble();
