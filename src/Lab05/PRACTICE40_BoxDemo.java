@@ -29,6 +29,7 @@ class Box{
     // поля класса
     double width;
     double height;
+    String sideColor;
 }
 /**
  * Класс для тестрования класса Box
@@ -44,8 +45,22 @@ public class PRACTICE40_BoxDemo {
 // присваиваем значение переменным экземпляра
         myBox.height = 25;
         myBox.width = 30;
+        myBox.sideColor = "Red";
 // вычисляем площадь прямоугольника
         area = myBox.height * myBox.width;
+        System.out.println("Площадь прямоугольника = " + area);
+// Создаем экземпляр (с именем) myBox2 класса Box
+        Box myBox2 = new Box();
+// присваиваем значение переменным экземпляра
+        myBox2.height = 30;
+        myBox2.width = 35;
+        myBox2.sideColor = "Green";
+// вычисляем площадь прямоугольника
+        area = myBox2.height * myBox2.width;
+        System.out.println("Поля экземпляра myBox2 класса Box:" +
+                "\nвысота: " + myBox2.height +
+                "\nширина: " + myBox2.width +
+                "\nцвет стороны: " + myBox2.sideColor);
         System.out.println("Площадь прямоугольника = " + area);
     }
 }
