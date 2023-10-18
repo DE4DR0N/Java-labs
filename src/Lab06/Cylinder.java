@@ -18,7 +18,9 @@ public class Cylinder extends Circle {
         super(radius);
         this.height = height;
     }
-
+    public Cylinder(double radius, String color) {
+        super(radius, color);
+    }
     public double getHeight() {
         return height;
     }
@@ -36,5 +38,9 @@ public class Cylinder extends Circle {
     @Override // Переопределяем метод toString родительского класса
     public String toString() {
         return "Цилиндр: радиус = " + getRadius() + " высота = " + height;
+    }
+    @Override
+    public double getLength() {
+        return super.getLength() * height;
     }
 }
