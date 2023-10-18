@@ -20,5 +20,11 @@ public class PRACTICE61_TestCylinder {
                 "\nЦвет = " + cylinder2.getColor() +
                 "\nПлощадь основания = " + cylinder2.getArea() +
                 "\nОбъём = " + cylinder2.getVolume());
+        Cylinder cylinder3 = new Cylinder(5.6, "pink");
+        System.out.println("Радиус = " + cylinder3.getRadius() +
+                "\nВысота = " + cylinder3.getHeight() +
+                "\nЦвет = " + cylinder3.getColor() +
+                "\nПлощадь основания = " + cylinder3.getArea() +
+                "\nОбъём = " + cylinder3.getVolume());
     }
 }
