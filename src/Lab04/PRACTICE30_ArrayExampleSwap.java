@@ -35,8 +35,8 @@ public class PRACTICE30_ArrayExampleSwap {
         int[] var = new int[4];
 // инициализируем массив var
         var[0] = 3;
-        var[1] = -7;
-        var[2] = 9;
+        var[1] = 7;
+        var[2] = 2;
         var[3] = 18;
         System.out.println("Элементы массива до обмена:" +
                 "\n\t var[1] = " + var[1] +
@@ -46,6 +46,10 @@ public class PRACTICE30_ArrayExampleSwap {
                 "\n\t var[1] = " + var[1] +
                 "\n\t var[2] = " + var[2]);
         double[] var2 = func(var);
+        if (var2 == null){
+            System.out.println("Нет корней");
+            return;
+        }
         System.out.println("Элементы массива корней" +
                 "\n\tx1 = " + var2[0] +
                 "\n\tx2 = " + var2[1]);
@@ -62,6 +66,7 @@ public class PRACTICE30_ArrayExampleSwap {
         int b = arr[1];
         int c = arr[2];
         double dsc = Math.pow(b, 2) - 4 * a * c;
+        if (dsc < 0) return null;
         double x1 = -b + Math.sqrt(dsc);
         double x2 = -b - Math.sqrt(dsc);
         return new double[]{x1, x2};
