@@ -36,6 +36,14 @@ public class Magazine {
         contents = new Contents(notes);
     }
     /**
+     * Метод, вычисляющий количество страниц в журнале
+     * @return numberPage
+     */
+    public int getNumberPage() {
+        numberPage = contents.getNumberPages();
+        return numberPage;
+    }
+    /**
      * Метод для изменения массива статей журнала
      * @param notes the notes to set
      */

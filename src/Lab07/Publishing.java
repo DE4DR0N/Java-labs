@@ -14,5 +14,6 @@ public class Publishing {
         Magazine magazine = new Magazine("Программирование", 1, 2016,
                 notes, "PUBLISHING_HOUSE", "PUBLISHING_LOCATION");
         System.out.println(magazine);
+        System.out.println("Всего страниц: " + magazine.getNumberPage());
     }
 }
