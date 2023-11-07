@@ -1,7 +1,5 @@
 package Lab04;
 /**
- * два примера использования массивов для
- * передачи данных в метод и обратно
  * пример 2: решение квадратного уравнения
  *
  * @author Gedrevich E.A.
@@ -9,12 +7,11 @@ package Lab04;
  */
 public class PRACTICE30_RootOfEquation {
     public static void main(String[] args) {
-        int[] var = new int[4];
+        int[] var = new int[3];
 // инициализируем массив var
         var[0] = 3;
         var[1] = 7;
         var[2] = 2;
-        var[3] = 18;
         double[] var2 = func(var);
         if (var2 == null){
             System.out.println("Нет корней");
