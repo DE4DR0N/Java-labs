@@ -28,8 +28,8 @@ public class PRACTICE30_RootOfEquation {
         int c = arr[2];
         double dsc = Math.pow(b, 2) - 4 * a * c;
         if (dsc < 0) return null;
-        double x1 = -b + Math.sqrt(dsc);
-        double x2 = -b - Math.sqrt(dsc);
+        double x1 = (-b + Math.sqrt(dsc)) / (2 * a);
+        double x2 = (-b - Math.sqrt(dsc)) / (2 * a);
         return new double[]{x1, x2};
     }
 }
