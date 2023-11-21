@@ -4,6 +4,11 @@ public class Triangle extends Shape{
     private double base;
     private double height;
 
+    public Triangle() {
+        super();
+        this.height = 0;
+        this.base = 0;
+    }
     public Triangle(String color, double base, double height) {
         super(color);
         this.base = base;

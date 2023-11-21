@@ -3,6 +3,7 @@ package Lab08;
 public class Shape {
     private String color;
 
+    public Shape() {this.color = "default color";}
     public Shape(String color) {
         this.color = color;
     }
