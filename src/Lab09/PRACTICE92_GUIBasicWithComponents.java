@@ -1,7 +1,6 @@
 package Lab09;
 
 import javax.swing.*;
-import java.awt.*;
 
 /**
  * Программа для тестирования Frame
@@ -10,7 +9,7 @@ import java.awt.*;
  * @author Gedrevich E.A.
  * @version 1.0 22.11.2023
  */
-public class PRACTICE91_GUIBasicWithComponents {
+public class PRACTICE92_GUIBasicWithComponents {
     public static void main(String[] args) {
         JFrame jframe = new JFrame("Eugene 10702221");
 
