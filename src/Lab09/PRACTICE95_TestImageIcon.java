@@ -11,10 +11,10 @@ import java.awt.*;
  * @version 1.0 22.11.2023
  */
 public class PRACTICE95_TestImageIcon extends JFrame {
-    private ImageIcon catIcon = new ImageIcon("D:/Programs/Java/Java-labs/src/imgs/cat.jpg");
-    private ImageIcon carIcon = new ImageIcon("D:/Programs/Java/Java-labs/src/imgs/car.jpg");
-    private ImageIcon manIcon = new ImageIcon("D:/Programs/Java/Java-labs/src/imgs/man.jpg");
-    private ImageIcon javaDevIcon = new ImageIcon("D:/Programs/Java/Java-labs/src/imgs/avrgJavaDev.jpg");
+    private ImageIcon catIcon = new ImageIcon("src/imgs/cat.jpg");
+    private ImageIcon carIcon = new ImageIcon("src/imgs/car.jpg");
+    private ImageIcon manIcon = new ImageIcon("src/imgs/man.jpg");
+    private ImageIcon javaDevIcon = new ImageIcon("src/imgs/avrgJavaDev.jpg");
 
     public PRACTICE95_TestImageIcon() {
         setLayout(new GridLayout(3, 2, 5, 5));
