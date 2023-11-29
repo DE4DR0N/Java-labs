@@ -4,8 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 
 /**
- * постороение графического приложения
- * менеджер компоновки GridLayout
+ * размещение картинок на JButton, JLabel
+ * картинки разных форматов в папке imgs
  *
  * @author Gedrevich E.A.
  * @version 1.0 22.11.2023

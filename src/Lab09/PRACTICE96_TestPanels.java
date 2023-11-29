@@ -3,6 +3,15 @@ package Lab09;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * построение графического интерфейса
+ * применение панелей
+ * программа создаёт интерфейс для
+ * микроволновой печи
+ *
+ * @author Gedrevich E.A.
+ * @version 1.0 22.11.2023
+ */
 public class PRACTICE96_TestPanels extends JFrame {
     public PRACTICE96_TestPanels() {
         setLayout(new GridLayout(1,  2));

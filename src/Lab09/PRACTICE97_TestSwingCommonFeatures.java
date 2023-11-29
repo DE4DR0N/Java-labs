@@ -3,6 +3,12 @@ package Lab09;
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * изучаем вспомогательные классы
+ *
+ * @author Gedrevich E.A.
+ * @version 1.0 22.11.2023
+ */
 public class PRACTICE97_TestSwingCommonFeatures extends JFrame {
     public PRACTICE97_TestSwingCommonFeatures() {
         JPanel panel1 = new JPanel(new FlowLayout(FlowLayout.LEFT,2, 2));
